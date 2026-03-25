@@ -45,7 +45,7 @@ function App() {
                 {
                   name: "subjects",
                   list: "/subjects",
-                  create: "/usbjects/create",
+                  create: "/subjects/create",
 
                   meta: {
                     label: "Subjects",
