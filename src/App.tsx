@@ -17,6 +17,7 @@ import { BookOpen, Home } from "lucide-react";
 import { Layout } from "./components/refine-ui/layout/layout";
 import SubjectList from "./pages/subjects/List";
 import SubjectCreate from "./pages/subjects/Create";
+
 function App() {
   return (
     <BrowserRouter>
@@ -65,7 +66,10 @@ function App() {
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/subjects">
                     <Route index element={<SubjectList />}></Route>
-                    <Route index element={<SubjectCreate />}></Route>
+                    <Route
+                      path="/subjects/create"
+                      element={<SubjectCreate />}
+                    ></Route>
                   </Route>
                 </Route>
               </Routes>
